@@ -7,3 +7,12 @@ function isAdult(x) {
 }
 
 console.log(`Exercise 2 Result`, isAdult(21));
+
+function isCharAVowel(x){
+    if(x=5){
+        return "True";
+    }else {
+        return "false";
+    }
+}
+console.log(`Exercise 3 Result`, isCharAVowel("4"));
