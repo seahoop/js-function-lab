@@ -22,3 +22,11 @@ function generateEmail(name, domain)
 
 }
 console.log(`Exercise 4 Result`, generateEmail ("Ericdu" , "harborindustry.com"))
+
+function greetUser(Name, time)
+{
+    return Name + " you are awesome Good" + time +"!";
+
+}
+
+console.log(`Exercise 5 result:`, greetUser("Eric", "Morning"))
