@@ -16,3 +16,9 @@ function isCharAVowel(x){
     }
 }
 console.log(`Exercise 3 Result`, isCharAVowel("4"));
+
+function generateEmail(name, domain)
+{return name + "@" + domain;
+
+}
+console.log(`Exercise 4 Result`, generateEmail ("Ericdu" , "harborindustry.com"))
