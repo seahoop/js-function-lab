@@ -56,11 +56,13 @@ function convertTemperature(temperature, scale)
 {
     if(scale === `C`)
         {
-            return(temperature * 9/5)+32;
+            let resultF = (temperature * 9/5)+32
+            return `${resultF} Fahrenheit`
         }
         else if(scale === `F`)
             {
-                return(temperature-32)*5/9;
+                let resultC = (temperature-32)*5/9
+                return `${resultC} Fahrenheit`
             }
                 else {
                     return `Invalid scale`;
@@ -68,3 +70,34 @@ function convertTemperature(temperature, scale)
             }
         
         console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+
+
+
+function basicCalculator(num1, num2, operation)
+{ let result;
+    if (operation === `add`)
+        {
+            result = num1 + num2;
+        }
+        else if (operation === `subtract`)
+        {
+            result = num1 - num2;
+        }
+        else if (operation === `divide`)
+            {
+                result = num1 / num2;
+            }
+        else if (operation === `multiply`)
+            {
+                result = num1 * num2;
+            }
+            else 
+            {
+                return `invalid`;
+            }
+            {
+                return result;
+            }
+}
+console.log(`Exercise 9 Result:`, basicCalculator(10, 5, "subtract"));
